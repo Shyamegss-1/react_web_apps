@@ -1,0 +1,67 @@
+.main-r3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e2e5ff;
+    backdrop-filter: blur(6px);
+}
+
+.main-r3 .loader {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: capitalize;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: flex;
+}
+
+.main-r3 .container {
+    overflow: hidden;
+}
+
+.main-r3 span.occ {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #086047;
+    animation: spin_up 4s infinite;
+}
+
+@keyframes spin_up {
+    10% {
+        transform: translateY(-105%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-205%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-305%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    85% {
+        transform: translateY(-405%);
+    }
+
+    100% {
+        transform: translateY(-400%);
+    }
+}

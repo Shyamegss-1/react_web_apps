@@ -1,0 +1,25 @@
+const path = "/ikshitachoudhary/dashboard";
+export const HOME = path;
+export const ADMIN = `${path}/admin`;
+export const STORE = `${path}/store`;
+export const PRODUCTDETAILS = (categories, id) =>
+  `${path}/store/${categories}/${id}`;
+export const BLOG = `${path}/blog`;
+export const BLOGEDIT = `${path}/edit-blog`;
+export const CONTACT = `${path}/contact`;
+export const ABOUTUS = `${path}/about`;
+export const CATEGORIES = `${path}/categories`;
+export const HOMEBANNER = `${path}/banner`;
+export const EDITHOMEBANNER = `${path}/edit-Banner`;
+export const PRODUCTPAGE = `${path}/product`;
+export const PRODUCTEDIT = `${path}/edit-product`;
+export const USER = `${path}/user`;
+export const ORDER = `${path}/orders`;
+export const CATEGORIEEDIT = `${path}/categories/categorie-Edit`;
+export const COUPON = `${path}/coupon-ed`;
+export const PAYMENTGATEWAY = `${path}/payment-gate`;
+export const SUBSCRIBE = `${path}/subscribe`;
+export const INVOICE = `${path}/invoice`;
+export const SEO = `${path}/page-seo`;
+export const SETTING = `${path}/setting`;
+export const NEWSLETTER = `${path}/templete`;

@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --main-bg-color: #7053C1;
+  --sec-bg-color: #ffffff;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 150px;
+  height: 100px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+.base-bg {
+  background-color: var(--main-bg-color) !important;
+
+}
+
+.secondary-bg {
+  background-color: var(--sec-bg-color) !important;
+}
+
+.base-text {
+  color: var(--main-bg-color);
+}
+
+button.base-bg:disabled {
+  background-color: #b1b1b1 !important;
+}
+
+
+.secondary-text {
+  color: var(--sec-bg-color);
+}
+
+.text-jade {
+  color: #000 !important;
+}
+
+/* */
+/*/ */
+
+.boga-header {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 11;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  top: 0px;
+  background-color: var(--sec-bg-color);
+}
+
+.hero-section {
+  padding: 40px 0px;
+}
+
+
+
+.card-hoverable {
+  transition: .5s ease-in-out all;
+}
+
+.card-hoverable:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.hero-section .banner-btn {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  border-radius: 99px;
+  cursor: pointer;
+  transform: translate3d(0px, 0px, 0px);
+  transition: box-shadow 150ms linear 0s, background-color 150ms linear 0s;
+  color: rgb(255, 255, 255);
+  background-color: rgb(28, 28, 28);
+  padding: 16px 48px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.search-box p {
+  font-size: 22px;
+  color: #000;
+  font-weight: 500;
+}
+
+.search-section {
+  padding: 60px 0px;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+.delay-faster {
+  transition-delay: 0.075s;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, .1);
+  border-left-color: white;
+  border-radius: 50%;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, .1);
+  border-left-color: white;
+  width: 36px;
+  height: 36px;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, .1);
+  border-left-color: white;
+  width: 36px;
+  height: 36px;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.br-red {
+  border: 1px solid red !important;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.nav-onlu {
+  height: calc(100vh - 4%);
+}
+
+
+.d-main {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 44px;
+  background: #FFC9C9;
+}
+
+.d-main .s-cihl {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  border-radius: 19px;
+  background: #FD3D3D;
+}
+
+
+
+
+/* second button css--------------------- */
+.dus-button {
+  position: relative;
+  background-color: #fff;
+  border: 1px var(--main-bg-color) solid;
+  padding: 10px 10px;
+  width: 140px;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: .6s;
+  height: 56px;
+  cursor: pointer;
+}
+
+.dus-button .button-icon {
+  border: 1px var(--main-bg-color) solid;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  position: absolute;
+  right: 5%;
+  top: 8px;
+  transition: .6s;
+  background-color: var(--main-bg-color);
+  color: #fff;
+}
+
+.dus-button .button-text {
+  position: absolute;
+  left: 6%;
+  top: 9px;
+  display: inline-flex;
+  color: var(--main-bg-color);
+  font-weight: 600;
+  transition: .6s;
+}
+
+.dus-button .button-text p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dus-button:hover {
+  background-color: #FD3D3D;
+  border: 1px #FD3D3D solid;
+}
+
+.dus-button:hover .button-icon {
+  right: 67%;
+  top: 8px;
+  color: #FD3D3D;
+  background-color: #fff;
+  border: 1px #fff solid;
+}
+
+.dus-button:hover .button-text {
+  left: 40%;
+  top: 9px;
+  color: #fff;
+}

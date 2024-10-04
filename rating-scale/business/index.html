@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>The Review Business - For Business</title>
+  </head>
+
+  <body>
+    <div id="portal"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        // let elHeight = document.getElementById("uiysj");
+        // if (window.scrollY > elHeight.offsetHeight) {
+        //   elHeight.classList.add("boga-header");
+        // } else {
+        //   elHeight.classList.remove("boga-header");
+        // }
+
+        const screenHeight = window.innerHeight;
+        const ScrollButton = document.getElementById("boko-no-p");
+
+        if (window.scrollY > screenHeight - 300) {
+          ScrollButton.style.display = "block";
+        } else {
+          ScrollButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

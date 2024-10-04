@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-tab a.active {
+    background-color: #006023;
+    color: white !important;
+}
+
+.navbar-tab a.active img {
+    filter: grayscale(100%) brightness(318%) hue-rotate(210deg);
+}

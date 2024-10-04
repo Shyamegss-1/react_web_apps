@@ -1,0 +1,20 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="30"
+  height="30"
+  viewBox="0 0 30 30"
+>
+  <path
+    style="
+      opacity: 1;
+      fill: #000;
+      fill-opacity: 1;
+      stroke: none;
+      stroke-width: 0.49999997;
+      stroke-miterlimit: 4;
+      stroke-dasharray: none;
+      stroke-opacity: 1;
+    "
+    d="M15 4 8.5 14h13L15 4zM8.5 16A5.488 5.488 0 0 0 3 21.5C3 24.547 5.453 27 8.5 27s5.5-2.453 5.5-5.5S11.547 16 8.5 16zm7.5 0v11h11V16H16z"
+  />
+</svg>

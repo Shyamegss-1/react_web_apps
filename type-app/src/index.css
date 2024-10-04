@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --swiper-navigation-size: 12px !important;
+  --swiper-theme-color: "black" !important;
+
+}
+
+#root {
+  max-width: 1920px;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.MuiDateRangeCalendar-root>div:first-child {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.boxTr:hover .swiper-button-next {
+  display: flex !important;
+}
+
+.boxTr:hover .swiper-button-prev {
+  display: flex !important;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgb(184, 184, 184);
+  border-radius: 20px;
+  padding: 12px;
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background-color: rgba(255, 255, 255, 0.566) !important;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active-prev {
+  opacity: 1 !important;
+  background-color: rgba(221, 221, 221, 0.658) !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 23px !important;
+}
